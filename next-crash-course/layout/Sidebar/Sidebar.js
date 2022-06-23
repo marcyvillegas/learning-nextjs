@@ -7,7 +7,7 @@ export default function Sidebar({ children }) {
         <div className={css.main_container}>
 
             <div className={css.sidebar_container}>
-                <h3>Sidebar</h3>
+                <h3 m-2 >Sidebar</h3>
 
                 <ul>
                     <li>

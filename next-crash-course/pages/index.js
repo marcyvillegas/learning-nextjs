@@ -3,13 +3,12 @@
 
 import Head from 'next/head'
 import Sidebar from '../layout/Sidebar/Sidebar'
+import Sample from '../layout/Sample/Sample'
 
 export default function Home() {
   return (
     <Sidebar>
-      <div style={{margin: 'auto'}}>
-        <h1>Root</h1>
-      </div>
+      <Sample />
     </Sidebar>
   )
 }

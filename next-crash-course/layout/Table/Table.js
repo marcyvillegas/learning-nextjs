@@ -1,5 +1,6 @@
 
 import css from "./Table.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap'
 
 export default function TableDetails() {
