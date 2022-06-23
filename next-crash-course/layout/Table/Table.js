@@ -1,6 +1,5 @@
 
 import css from "./Table.module.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap'
 
 export default function TableDetails() {
@@ -68,82 +67,12 @@ export default function TableDetails() {
                             @fat
                         </td>
                     </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
                 </tbody>
             </Table>
 
             <div>
                 <Button
-                    color="danger"
+                    style={{backgroundColor: '#endregion'}}
                     onClick={function noRefCheck() { }}
                 >
                     Click Me
@@ -159,7 +88,6 @@ export default function TableDetails() {
                     </ModalBody>
                     <ModalFooter>
                         <Button
-                            color="primary"
                             onClick={function noRefCheck() { }}
                         >
                             Do Something
