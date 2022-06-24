@@ -5,8 +5,8 @@ body {
   font-family: Roboto;
 }
 
-a {
-  color: inherit;
+a, a :hover {
+  color: inherit !important;
   text-decoration: none;
 }
 

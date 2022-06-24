@@ -7,20 +7,32 @@ export default function Sidebar({ children }) {
         <div className={css.main_container}>
 
             <div className={css.sidebar_container}>
-                <h3 m-2 >Sidebar</h3>
+                <h3>Sidebar</h3>
 
-                <ul>
+                <div className={css.list}>
                     <li>
                         <Link href="/">
                             Root
                         </Link>
                     </li>
+
                     <li>
                         <Link href="/dashboard">
                             Dashboard
                         </Link>
                     </li>
-                </ul>
+
+                    <li>
+                        <Link href="/users">
+                            Users
+                        </Link>
+                    </li>
+
+                    <li>
+                        asdf
+                    </li>
+                </div>
+
             </div>
 
             {children}
