@@ -23,7 +23,7 @@ Includes hashing of password
 
 <br>
 
-### Sending a "Signin" Request From The Frontend
+### >> Sending a "Signin" Request From The Frontend
 
 - file: 
 
@@ -31,7 +31,7 @@ image
 
 <br>
 
-### Protecting Pages (not final)
+### >> Protecting Pages (not final)
 
 ![image](https://user-images.githubusercontent.com/58241136/175738654-1c588f52-1940-455b-be04-2edddac3aea5.png)
 
