@@ -8,6 +8,7 @@ import css from './users.module.css'
 export default function Users() {
 
     const [usersData, setUsersData] = useState([])
+    const [searchTitle, setSearchTitle] = useState("")
 
     // function that fetches data
     useEffect(() => {
@@ -18,7 +19,10 @@ export default function Users() {
     })
 
     // mapping the usersData
-    const usersList = usersData.map(user => {
+    const usersList = usersData.filter((value) => {
+        if (searchTitle === "") return value
+        if  (value.name.toLowerCase().includes(searchTitle.toLocaleLowerCase())) return value
+    }).map(user => {
         return (
             <p>
                 <Link href={`/users/${user.id}`}>
@@ -38,8 +42,10 @@ export default function Users() {
                 </div>
 
                 <form className="mb-4 d-flex gap-4">
-                    <input type="text" />
-                    <input type="text" />
+                    <input type="text"
+                    placeholder="Search for a user"
+                    onChange={(event) => setSearchTitle(event.target.value)}
+                    />
                 </form>
 
                 <div className={css.user_container}>

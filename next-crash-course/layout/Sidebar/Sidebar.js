@@ -27,10 +27,6 @@ export default function Sidebar({ children }) {
                             Users
                         </Link>
                     </li>
-
-                    <li>
-                        asdf
-                    </li>
                 </div>
 
             </div>

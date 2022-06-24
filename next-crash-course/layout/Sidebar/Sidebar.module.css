@@ -11,6 +11,10 @@
     padding: 0.2rem;
 }
 
+.list li :hover {
+    color: green !important ;
+}
+
 .main_container {
     display: flex;
     justify-content: flex-start;
