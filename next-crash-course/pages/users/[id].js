@@ -1,17 +1,28 @@
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react'
+import Sidebar from '/layout/Sidebar/Sidebar'
 
-export default function DetailedNews() {
+export default function DetailedUser() {
 
+  const [userDetails, setUserDetails] = useState([])
+
+  // get query id
   const router = useRouter();
-
   const id = router.query.id
 
-  // send a request to the api using an endpoint
-  // to fetch data
+  // function that fetches data
+  useEffect(() => {
 
-    return (
-      <div>
-        this is the detailed about
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then(response => response.json())
+      .then(data => setUserDetails(data))
+  })
+
+  return (
+    <Sidebar>
+      <div style={{margin: 'auto'}}>
+        {userDetails.name}
       </div>
-    )
-  }
+    </Sidebar>
+  )
+}
