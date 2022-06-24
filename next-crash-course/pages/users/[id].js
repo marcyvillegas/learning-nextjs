@@ -20,8 +20,11 @@ export default function DetailedUser() {
 
   return (
     <Sidebar>
-      <div style={{margin: 'auto'}}>
-        {userDetails.name}
+      <div className="mt-5 m-auto d-flex flex-column">
+        <p>{userDetails.name}</p>
+        <p>{userDetails.username}</p>
+        <p>{userDetails.email}</p>
+        <p>{userDetails.website}</p>
       </div>
     </Sidebar>
   )
